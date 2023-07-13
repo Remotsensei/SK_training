@@ -82,7 +82,3 @@ An additional feature of RAS Mapper is the inclusion of background maps and sate
 - [HEC-RAS 2D User's Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/r2dum/latest)
 
 
-
-##
-
-<div align="center"><a href="http://www.escuelaing.edu.co" target="_blank"><img src="../../.icons/Banner1.svg" alt ="Support by" width="100%" border="0" /></a><sub><br>This guide course has been developed with the support of the Colombian School of Engineering - Julio Garavito. Find more content at https://github.com/uescuelaing</sub><br><br></div>
