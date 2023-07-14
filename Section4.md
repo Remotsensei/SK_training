@@ -42,7 +42,7 @@ This class presents the recommended process for the definition of data and bound
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/c876c50d-b152-4542-84d4-ce76cc655a51)
 
 
-2. In the flow analysis window, enter a description and check that the geometry file and flow data are correctly selected. Then select the modeling features or programs (geometry preprocessor, unsteady flow simulation, sediments, post-processor, flood mapping). You must also define the simulation start and end times and the calculation properties (calculation interval, output hydrograph interval, output map interval, and output file).
+2. In the flow analysis window, enter a description and check that the geometry file and flow data are correctly selected. Then select the modeling features or programs (geometry preprocessor, unsteady flow simulation, sediments, post-processor, flood mapping). You must also define the simulation start and end times [24nov 2022 at 00:00 to 24 Nov 2022 at 23:00] and the calculation properties (calculation interval, output hydrograph interval, output map interval, and output file).
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/c77d71a1-d1f4-469a-81bd-d1dc78d7c26e)
 
