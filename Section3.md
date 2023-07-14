@@ -17,74 +17,68 @@ This class presents the recommended process for the definition of the Manning co
 #### Land cover maps
 
 It is common for a project that involves  hydraulic modeling to have additional information such as land cover and land use. 
-Based on this information on land cover and land use, it is possible to associate said information with **n** values ​​of the Manning coefficient, taking into account the recommendations mentioned in literature, attributing standard coefficients to standard landcovers
+Based on this information on land cover and land use, it is possible to associate said information with **n** values ​​of the Manning coefficient, taking into account the recommendations mentioned in literature, attributing standard coefficients to standard landcovers. The following image shows for examle, the suggested the association, where a value **n** is assigned to different land cover characteristics.
+
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/eb6ebd6f-48ac-4381-a7b6-7e4093621030)
 
 <sub><i>Surface Roughness and Manning’s ‘n’ Table as suggested for HECRas, based on NLCD land cover types</i></sub><br>
 
-
-
-The following image shows the association made for the example of the course, where a value **n** is assigned to different land cover characteristics.
-
-<div align="center">
-<img alt="Manning" src="Screens/Screen1.png" width="60%">
-</div>
-
 #### Manning coefficient map creation
 
-1. In the HEC tool go to the RAS Mapper tool. Now we import the file in vector format with geographic elements by clicking on **Project → Create New RAS Layer → Land Cover Layer** (Project → Create a New RAS Layer → Land Cover Layer).
+1. The landcover can be obtained from
 
-<div align="center">
-<img alt="Manning" src="Screens/Screen2.png" width="60%">
-</div>
+  https://zenodo.org/record/7254221
+  at 10m, or
+  https://zenodo.org/record/3939050
+  at 100m
 
-2. In the displayed window select the <kbd>+</kbd> icon to add the file. Then select the file extension as **"Geometries"** and then add the Manning coefficients field (click <kbd>Add Fiel...</kbd> ).
+  you can optionally download the data using the dedicated web-browser
+  https://viewer.esa-worldcover.org/worldcover/
+  if you create a registered user
 
-<div align="center">
-<img alt="Manning" src="Screens/Screen3.png" width="60%">
-</div>
+The ESA landcover classes are as follows
 
-3. Review the classification names and information in the output file. Finally click on <kbd>Crate</kbd> and the process will start.
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/26fbdc18-e1d5-4547-bff2-c4255e4453ad)
 
-<div align="center">
-<img alt="Manning" src="Screens/Screen4.png" width="60%">
-</div>
+<sub><i>Landcover class [Source: https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100]</i></sub><br>
+
+> Note: the files downloaded from the above repositories are in geographic coordinates. You will need to reproject them to be consistent with the project coordinate system.
+  
+2. In the HEC tool go to the RAS Mapper tool. Now we import the file in vector format with geographic elements by clicking on **Project → Tools → New Land Cover**
+   In the displayed window select the <kbd>+</kbd> icon to add the file. Then select the file extension as **"Geometries"** and then add the Manning coefficients field (click <kbd>Add Fiel...</kbd> ).
+Review the classification names and information in the output file. Finally click on <kbd>Crate</kbd> and the process will start.
+
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/caba1841-c194-4982-9d81-4f1b2ee623f8)
+
  
 4. Once the layer is created, you can view and review the information generated in the RAS Mapper.
 
-<div align="center">
-<img alt="Manning" src="Screens/Screen5.png" width="60%">
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/6010108e-275e-48e0-9017-68049dc6750f)
 
-#### Geometry adjustment and definition of coefficients
 
-1. For 1D geometry adjustment, start the edit option by clicking the <kbd>:pencil2:</kbd> button. Then right click on the cross sections and select **Update Cross Sections → Manning's Values**. Stop editing and save the changes.
+5. It is important to associate this layer to the geometry data. This is a commonly overlooked step for new users.
 
-<div align="center">
-<img alt="Manning" src="Screens/Screen6.png" width="60%">
-</div>
-
-2. You will be able to view and review the fit to the information from the geometric information window with the help of the Manning values ​​edition table (Tables → Manning's n or k Values).
- 
-<div align="center">
-<img alt="Manning" src="Screens/Screen7.png" width="60%">
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/0097a7db-423b-4b17-85eb-8fe2bf4ad533)
 
 
 ### Boundary conditions
 
 The spatial location of two different boundary conditions (BC – Boundary Condition Line) must not be defined on the same grid cell. Multiple boundary conditions can be added to the composite mesh. Multiple inlet hydrographs may be associated, for example, in the mainstem and laterals.
 
-For modeling, at least one boundary condition line upstream and one downstream must be entered. Boundary condition lines can be drawn internally or externally. For example, base flow or ground flow can be defined in any internal zone of the model. BC lines can be drawn or imported using a shapefile. It is recommended to import these lines when dealing with non-straight elements such as circular or curved weirs.
+For modeling, at least one boundary condition line upstream and one downstream must be entered. Boundary condition lines can be drawn internally or externally. For example, base flow or ground flow can be defined in any internal zone of the model. BC lines can be drawn or imported using a shapefile.
 
-The following is the recommended process for drawing the lines for boundary conditions:
+The following is the recommended process for importing the lines
+
+1. In RAS Mapper edit mode, display the **Geometries** and **2D Flow Areas** tree. Then select the boundary condition lines and click layer properties. From there, select 'features' and select 'import features'
+
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/e1631fc4-904a-4e23-938c-3c901c98011a)
+
+Once you imported the features, you have to make sure that the lines are all covered by the extent of the domain, and by the computational area. The only exception is the downstream condition, which can be 'External'. In RAS Mapper edit mode, you can manually adjust the features and eventually delete those that you do not need, or add more where needed.
+
+
+The following is the recommended process for drawing the lines
 
 1. In RAS Mapper edit mode, display the **Geometries** and **2D Flow Areas** tree. Then select the boundary condition lines and with the edit bar draw in plan the upstream and downstream BC lines. Take into account that the traced line must be located in front of the cells of the channel zone. It is recommended to draw lines BC from left to right taking the flow direction as a reference. When finished, save the editing changes.
-
-<div align="center">
-<img alt="Property" src="Screens/Screen4.png" width="70%">
-<img alt="Property" src="Screens/Screen5.png" width="80%">
-</div>
 
 
 ### References
