@@ -22,7 +22,7 @@ It is common for a project that involves  hydraulic modeling to have additional 
 Based on this information on land cover and land use, it is possible to associate said information with **n** values ​​of the Manning coefficient, taking into account the recommendations mentioned in literature, attributing standard coefficients to standard landcovers
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/eb6ebd6f-48ac-4381-a7b6-7e4093621030)
 
-Surface Roughness and Manning’s ‘n’ Table as suggested for HECRas, based on NLCD land cover types
+<sub><i>Surface Roughness and Manning’s ‘n’ Table as suggested for HECRas, based on NLCD land cover types</i></sub><br>
 
 
 
