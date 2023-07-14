@@ -186,7 +186,7 @@ hecPath='/home/giulia/Training/bin_ras/rasUnsteady64 '
 account=''
 partition='postproc'
 ntasks=24 #number of cores for parallel processing
-nnodes=2 #numbr of nodes for parallel processing
+nnodes=1 #numbr of nodes for parallel processing
 
 
 #default duration in case of no flows
