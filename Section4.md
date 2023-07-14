@@ -27,10 +27,7 @@ This class presents the recommended process for the definition of data and bound
 
 2. In the **Unsteady flow data** window, you can enter a description of the flow information, as well as define the boundary conditions, initial conditions and add meteorological or observed information in the system to model. For this exercise, we will add a flow hydrograph upstream of the channel for each upstream, and define smooth flow in the downstream section (BC Line 28). Once you enter all the information click on the <kbd>**Apply Data**</kbd> button that you will find in the upper right part of the window. Finally, select <kbd>**Plot Data**</kbd> to verify and review the data upload. Remember to save the changes made to the flow characteristics and hydraulic conditions
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/9f992a1a-00a2-4ec3-bce1-f5e4cabc9786)
-
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/829fce67-4382-4609-a18c-3f6dac75bc8b)
-
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/579fcb5d-1331-4bc4-ac04-cfa5749b75a7)
 
 > Remember that in the case of hydrographs or station-flow curves, you must correctly define the start and end times of the hydrograph, as well as the time interval and the slope of the energy line (EG slope for distributing flow, we can use 0.015).
 
