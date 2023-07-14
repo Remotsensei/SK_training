@@ -56,3 +56,8 @@ Below is an example of the python script which copies all data groups but “Res
  ![image](https://github.com/Remotsensei/SK_training/assets/127943691/0547f632-82e6-4567-9318-567e97da6cff)
 
 > Note: this file can be created using any GIS software, and providing a spatial join between the outlets and the HECras BC. It can also be created manually, provided that the user knows the abovementioned information. Note that the file header **must** be consistent with the example above, for the script to run
+
+
+### run in linux
+
+The file [[scriot](https://github.com/Remotsensei/SK_training/script_for_linux.py) script]
