@@ -39,10 +39,10 @@ At the end you will be able to view the perimeter drawn on the map.
 
 A computational mesh or grid is created from the definition of a 2D drainage area. Each cell of the mesh is composed of the following 3 properties.
 
-<div align="center">
-<img alt="Mesh" src="Graph/MeshParts.png" width="60%"><br>
-<sub><i>Taken from the HEC-RAS 2D Modeling User Manual. Page 3-5.</i></sub><br>
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/6ad130af-e87f-4575-a0b5-06ad69caf88b)
+
+<sub><i>HEC-RAS 2D Modeling User Manual. Page 3-5.</i></sub><br>
+
 
  * Center of the cell (Cell Center): Corresponds to the computational center of the cell and is the specific place where the elevation of the water sheet is calculated. Its location is not necessarily located at its centroid.
  * Cell Faces: Corresponds to the specific limits of each cell, they are generally straight lines, however, they can also be made up of multiple nodes, such as the perimeter of 2D drainage areas. A cell can contain a maximum of 8 faces.
@@ -52,14 +52,14 @@ The recommended process for the creation and definition of the two-dimensional m
 
 1. While in edit mode, right-click **Perimeters** and then click **Edit 2D Area Properties**. For the perimeter created, define the cell spacing and click <kbd>Generate Computation Points</kbd>. You can also assign a default value for the Manning roughness coefficient for cells that are not associated with a cap layer, and review the default values ​​for the tolerances.
 
-<div align="center">
-<img alt="Mesh" src="Screens/Screen4.png" width="75%">
-<img alt="Mesh" src="Screens/Screen5.png" width="75%">
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/8731adac-1f0d-4181-843e-7060bcc6ae55)
 
-> Note: Keep in mind that depending on the cell size, it will potentially increase the number of cells and consequently the computational cost to solve the 2D model.
 
-> **Shape of the cells**: Generally, for irregular 2D Flow Areas, the internal mesh is made of regular structured shape and the border cells of irregular shape, thus creating a composite unstructured mesh. RAS Mapper has been designed to use Unstructured composite meshes, however, depending on the geometry of the 2D Flow Area, it can also work with fully structured meshes. By right-clicking on Perimeters and then clicking on Layer Properties, you can activate the box for generating hexagonal compound cells in Features. You will need to click <kbd>Generate Computation Points</kbd> in the editing window to generate the mesh again. ![Screen6.png](Screens/Screen6.png) ![Screen7.png](Screens/Screen7.png)
+> Note: The point spacing controls the overall number of cells and consequently the computational cost and the processing time to solve the 2D model.
+
+> **Shape of the cells**: Generally, for irregular 2D Flow Areas, the internal mesh is made of regular structured shape and the border cells of irregular shape, thus creating a composite unstructured mesh. RAS Mapper has been designed to use Unstructured composite meshes, however, depending on the geometry of the 2D Flow Area, it can also work with fully structured meshes. By right-clicking on Perimeters and then clicking on Layer Properties, you can activate the box for generating hexagonal compound cells in Features. You will need to click <kbd>Generate Computation Points</kbd> in the editing window to generate the mesh again.
+
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/f98d8d89-7937-4134-b230-c84dfae4da3c)
 
 2. Don't forget to save the geometry changes.
 
