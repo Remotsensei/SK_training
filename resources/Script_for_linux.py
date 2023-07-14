@@ -264,7 +264,7 @@ for id,item in enumerate(keys):
         alterateKey(fdest,hdf_filename,d1,dt,Upstream,item)
 
 #now embed start and end time in the b file
-alterateBfile1(input_dir,project_name,plan_index_str,dt)
+alterateBfile(input_dir,project_name,plan_index_str,dt)
 
 
 #Now unfortunately, we need to convert the dos files to unix, so we will create a set of temporary files just in case
