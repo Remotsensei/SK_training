@@ -40,3 +40,6 @@ The file tmp.hdf is needed to run HEC-Ras in linux. The *.tmp.hdf* is derived fr
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/6ae89aa4-3cf6-43fc-8255-abf51b1da782)
 
+Below is an example of the python script which copies all data groups but “Results” from the Muncie.p04.hdf into Muncie.p04.tmp.hdf 
+
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/4b5a0bd9-990a-42ca-bd02-7943a2fa0932)
