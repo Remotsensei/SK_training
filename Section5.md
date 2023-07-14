@@ -60,4 +60,10 @@ Below is an example of the python script which copies all data groups but “Res
 
 ### run in linux
 
-The file [[scriot](https://github.com/Remotsensei/SK_training/script_for_linux.py) script]
+1. The provided [[script](https://github.com/Remotsensei/SK_training/script_for_linux.py)] includes the whole pipeline to run the project previously created in linux. 
+to run this script, we need to activate the conda environment by 
+
+*conda activate*
+*python*
+
+2. Once the procedure is finalized, we can download the file *.hdf_done* and visualize these results in HEC Ras. For this, rename the 'old' *.p01.hdf* file to *.p01_windows.hdf*, and rename the file *.p01.hdf_done* as the original *p01.hdf*
