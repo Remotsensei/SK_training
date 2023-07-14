@@ -73,30 +73,22 @@ The following is the recommended process for mesh refinement:
 
 1. In edit mode, select **Breaklines** or **Refinement Regions**, depending on whether you will be using lines or regions. Then with the edit bar draw the refinement lines or regions.
 
-<div align="center">
-<img alt="Mesh" src="Screens/Screen8.png" width="75%">
-<img alt="Mesh" src="Screens/Screen9.png" width="75%">
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/8582f78e-41ba-4901-9da5-d1feba9fc3de)
+
 
 2. Now right click on the **Breaklines** or **Refinement Regions** and select **Enforce All Breaklines** or **Enforce All Regions**, depending on the case. On the map you will see the adjustment made to the mesh with the lines or regions. Save the geometry changes.
 
-<div align="center">
-<img alt="Mesh" src="Screens/Screen10.png" width="75%">
-<img alt="Mesh" src="Screens/Screen11.png" width="75%">
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/c17f1401-b9d6-4d36-86c4-4d57fd68b7de)
 
-3. During refinement, some cells have been geometrically resolved with a greater number of faces than the 8 allowed. For the correction, these cells must be separated into 2 or more, adding additional computation points in edit mode. You can follow this process:
+
+> Note: During refinement, some cells might be geometrically resolved with a greater number of faces than the 8 allowed. For the correction, these cells must be separated into 2 or more, adding additional computation points in edit mode. You can follow this process:
    * Navigate the mesh near the refinement area and identify the erroneous cells (red circles).
    * Zoom in on the wrong cell and check the number of heads.
    * In edit mode (selecting the **Computation points**), add a new point inside the cell close to the area with the largest number of faces.
    * Save the changes made.
 
-<div align="center">
-<img alt="Mesh" src="Screens/Screen12.png" width="75%">
-</div>
-
-
-> Lines or regions for refinement can also be imported into RAS Mapper from vector geographic files. In edit mode (<kbd>:pencil2:</kbd>), right click on the **Breaklines** and select **Import Features From Shapefile**. ![Screen12A.png](Screens/Screen12A.png) In the popup window, define the spacing and review the properties of the file to import and click <kbd>Import Features</kbd>. You will see the first adjustment made to the mesh and the breaklines. For regions, repeat the same process, but selecting **Refinement Regions**
+> Lines or regions for refinement can also be imported into RAS Mapper from vector geographic files. In edit mode (<kbd>:pencil2:</kbd>), right click on the **Breaklines** and select **Import Features From Shapefile**.
+> In the popup window, define the spacing and review the properties of the file to import and click <kbd>Import Features</kbd>. You will see the first adjustment made to the mesh and the breaklines. For regions, repeat the same process, but selecting **Refinement Regions**
 
 
 
