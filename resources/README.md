@@ -7,3 +7,4 @@ This subfolder contains all the files needed for this course
 3. script_for_linux.py > python pipeline to run hecras in linux.
 4. Geotiffs.zip > terrain and landuse data for HECRas
 5. BC.zip > boundary condition lines location
+6. boundary2CREST.csv > correspondence between the CRESt outlet names, and the BC lines in HECRas
