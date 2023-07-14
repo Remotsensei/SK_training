@@ -32,4 +32,4 @@ The following is the recommended process for drawing the lines for boundary cond
 - [HEC-RAS Documentation. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs)
 - [HEC-RAS Mapper User's Manual](https://www.hec.usace.army.mil/confluence/rasdocs/rmum/latest)
 - [HEC-RAS 2D User’s Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/r2dum/latest)
-- Computer tools for channel design and modeling. r.cfdtools@gmail.com. [(rcftools)](https://github.com/rcftools]).
+
