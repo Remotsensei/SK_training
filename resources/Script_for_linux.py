@@ -133,7 +133,7 @@ def runHEC(geom_index_str,plan_index_str,folder,hecPath,project_name,account,par
             os.remove(job_file)
     print('launching job'+fileforsh)
     str1=hecPath+'{}.c{} b{}\n'.format(project_name,geom_index_str,geom_index_str)
-    str2='mv '+'{}.p{}.tmp.hdf '.format(project_name, plan_index_str)+'{}.p{}.hdf_done\n'.format(project_name, plan_index_str)
+    str2='mv '+'{}/{}.p{}.tmp.hdf '.format(folder,project_name, plan_index_str)+'{}/{}.p{}.hdf_done\n'.format(folder,project_name, plan_index_str)
     str3='module load gcc/5.4.0\n'
     str4='RAS_BIN_PATH='+os.path.dirname(hecPath)+'\n'
     str5='export LD_LIBRARY_PATH=$RAS_BIN_PATH:$LD_LIBRARY_PATH\n'
