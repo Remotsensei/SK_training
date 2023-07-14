@@ -151,7 +151,7 @@ def runHEC(geom_index_str,plan_index_str,folder,hecPath,project_name,account,par
             fh.writelines("#SBATCH --error=%s.HECerr\n" % project_name)
             fh.writelines(str4)
             fh.writelines(str5)
-            fh.writelines(str3)
+            #fh.writelines(str3)
             fh.writelines(str1)
             fh.writelines(str2)
     ##convert dos to unix
