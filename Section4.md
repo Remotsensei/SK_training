@@ -29,36 +29,29 @@ This class presents the recommended process for the definition of data and bound
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/9f992a1a-00a2-4ec3-bce1-f5e4cabc9786)
 
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/829fce67-4382-4609-a18c-3f6dac75bc8b)
 
-> Remember that in the case of hydrographs or station-flow curves, you must correctly define the start and end times of the hydrograph, as well as the time interval and the slope of the energy line (EG slope for distributing flow).
+
+> Remember that in the case of hydrographs or station-flow curves, you must correctly define the start and end times of the hydrograph, as well as the time interval and the slope of the energy line (EG slope for distributing flow, we can use 0.015).
 
 
 ### Simulation plan and simulation
 
 1. Enter the **Unsteady flow analysis** window. And in the popup window select **File → New/Save plan** (File → Save plan). Then enter the name with which you want to save the plan. A file in the format <kbd>.p*</kbd> will be created.
 
-<div align="center">
-<img alt="S2D" src="Screens/Screen5.png" width="60%">
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/c876c50d-b152-4542-84d4-ce76cc655a51)
+
 
 2. In the flow analysis window, enter a description and check that the geometry file and flow data are correctly selected. Then select the modeling features or programs (geometry preprocessor, unsteady flow simulation, sediments, post-processor, flood mapping). You must also define the simulation start and end times and the calculation properties (calculation interval, output hydrograph interval, output map interval, and output file).
 
-<div align="center">
-<img alt="S2D" src="Screens/Screen6.png" width="60%">
-</div>
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/c77d71a1-d1f4-469a-81bd-d1dc78d7c26e)
 
-3. Now enter the menu **Options → Calculation options and tolerances**, there you can define and/or select the calculation options, equations, initial conditions, tolerances, among others. Likewise, in the <kbd>Advanced Time Step Control</kbd> tab you can leave the time fixed or self-adjusting based on the Courant condition.
+In the menu **Options → Calculation options and tolerances**, there you can define and/or select the calculation options, equations, initial conditions, tolerances, among others. Likewise, in the <kbd>Advanced Time Step Control</kbd> tab you can leave the time fixed or self-adjusting based on the Courant condition.
 
-<div align="center">
-<img alt="S2D" src="Screens/Screen7.png" width="60%">
-<img alt="S2D" src="Screens/Screen8.png" width="60%">
-</div>
+3. Finally click on the <kbd>**Compute**</kbd> button and the simulation calculations will start.
 
-4. Finally click on the <kbd>**Compute**</kbd> button and the simulation calculations will start.
+![image](https://github.com/Remotsensei/SK_training/assets/127943691/380e01a7-abd6-4424-a831-125322456111)
 
-<div align="center">
-<img alt="S2D" src="Screens/Screen9.png" width="60%">
-</div>
 
 ---
 > **Note 1: Equations to solve the model** <br> HEC-RAS has the option to run the following sets of equations: 2D diffusion wave equations, local inertia approximation (SWE-LIA) and the Saint-Venant equations or Shallow Water Equations (SWE) with two different advection approaches (Eulerian-Lagrangian (SWE-ELM) and Eulerian (SWE-EM)). In general, all solvers use a combination of finite difference and finite volume methods on an unstructured polygon mesh with subgrid bathymetry.<br><br>
