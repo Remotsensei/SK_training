@@ -18,13 +18,15 @@ This class presents the recommended process for the definition of the Manning co
 
 From an analytical point of view, it is possible to associate landcover data with **n** values ​​of the Manning coefficient, taking into account the recommendations mentioned in literature, attributing standard coefficients to standard landcovers. The following image shows for example, the suggested association, where a value **n** is assigned to different land cover characteristics.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/eb6ebd6f-48ac-4381-a7b6-7e4093621030)
+<div align="center">
+<img alt="manning" src="images/manning-n-NLCD.png" width="85%">
+</div>
 
-<sub><i>Surface Roughness and Manning’s ‘n’ Table as suggested for HECRas, based on NLCD land cover types</i></sub><br>
+<sub><i>Example Manning's n values for various NLCD Land Cover Types. From HEC-RAS manual</i></sub><br>
 
 #### Manning coefficient map creation
 
-1. The landcover can be obtained from
+1. Free high resolution landcover data can be obtained from
 
   https://zenodo.org/record/7254221
   at 10m, or
@@ -37,8 +39,72 @@ From an analytical point of view, it is possible to associate landcover data wit
 
 The ESA landcover classes are as follows
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/26fbdc18-e1d5-4547-bff2-c4255e4453ad)
-
+<td><p>Landcover class</p></td>
+</tr>
+</table>
+<p><b>Map Class Table</b>
+<table class="eecat">
+<tr>
+<th scope="col">Value</th>
+<th scope="col">Color</th>
+<th scope="col">Description</th>
+</tr>
+<tr>
+<td>10</td>
+<td><span style="background-color:#006400">#006400</span></td>
+<td>Tree cover</td>
+</tr>
+<tr>
+<td>20</td>
+<td><span style="background-color:#ffbb22">#ffbb22</span></td>
+<td>Shrubland</td>
+</tr>
+<tr>
+<td>30</td>
+<td><span style="background-color:#ffff4c">#ffff4c</span></td>
+<td>Grassland</td>
+</tr>
+<tr>
+<td>40</td>
+<td><span style="background-color:#f096ff">#f096ff</span></td>
+<td>Cropland</td>
+</tr>
+<tr>
+<td>50</td>
+<td><span style="background-color:#fa0000">#fa0000</span></td>
+<td>Built-up</td>
+</tr>
+<tr>
+<td>60</td>
+<td><span style="background-color:#b4b4b4">#b4b4b4</span></td>
+<td>Bare / sparse vegetation</td>
+</tr>
+<tr>
+<td>70</td>
+<td><span style="background-color:#f0f0f0">#f0f0f0</span></td>
+<td>Snow and ice</td>
+</tr>
+<tr>
+<td>80</td>
+<td><span style="background-color:#0064c8">#0064c8</span></td>
+<td>Permanent water bodies</td>
+</tr>
+<tr>
+<td>90</td>
+<td><span style="background-color:#0096a0">#0096a0</span></td>
+<td>Herbaceous wetland</td>
+</tr>
+<tr>
+<td>95</td>
+<td><span style="background-color:#00cf75">#00cf75</span></td>
+<td>Mangroves</td>
+</tr>
+<tr>
+<td>100</td>
+<td><span style="background-color:#fae6a0">#fae6a0</span></td>
+<td>Moss and lichen</td>
+</tr>
+</table>
 <sub><i>Landcover class [Source: https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100]</i></sub><br>
 
 > Note: the files downloaded from the above repositories are in geographic coordinates. You will need to reproject them to be consistent with the project coordinate system.
@@ -82,9 +148,5 @@ The following is the recommended process for drawing the lines
 
 
 ### References
-- [HEC-RAS User’s Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/rasum/latest)
-- [HEC-RAS Hydraulic Reference Manual.2020](https://www.hec.usace.army.mil/confluence/rasdocs/ras1dtechref/latest)
-- [HEC-RAS Documentation. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs)
+- [HEC-RAS 2D User's Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/r2dum/latest)
 - [HEC-RAS Mapper User's Manual](https://www.hec.usace.army.mil/confluence/rasdocs/rmum/latest)
-- [HEC-RAS 2D User’s Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/r2dum/latest)
-

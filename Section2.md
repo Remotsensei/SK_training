@@ -24,61 +24,69 @@ The recommended process for the geographical delimitation of the study area, dra
 
 1. In the RAS Mapper right click on **Geometries** and select **Add New Geometry. In the popup window, add a clear name.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/6621b130-19c0-405a-85ae-eb3ee1c7aa4f)
+<div align="center">
+<img alt="Fig06" src="images/Fig06.jpg" width="85%">
+</div>
 
 2. Launch the editing option by clicking the *pencil* button. Expand the **2D Flow Areas** tree and select **Perimeters**. Using the drawing bar you can manually trace the 2D perimeter of the study area.
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/978caea8-57e1-499b-b738-7bb0a6012e91)
 
+<div align="center">
+<img alt="Fig07" src="images/Fig07.jpg" width="85%">
+</div>
 
 > The 2D flow area can also be imported from a vector geographic file. To do this, in edit mode, right-click on **Perimeters** and select **Import Features From Shapefile**. Select the file, and then review all the parameterizable properties for the imported perimeter.
 At the end you will be able to view the perimeter drawn on the map.
 
+> Note: the 2D flow area can not be outside the extent of the terrain. if there are 'holes' in the terrain, included in the 2d domain, HEC will give error.
 
 
 ### Creation and definition of the 2D mesh
 
 A computational mesh or grid is created from the definition of a 2D drainage area. Each cell of the mesh is composed of the following 3 properties.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/6ad130af-e87f-4575-a0b5-06ad69caf88b)
+<div align="center">
+<img alt="Fig08" src="images/Fig08.png" width="85%">
+</div>
 
-<sub><i>HEC-RAS 2D Modeling User Manual. Page 3-5.</i></sub><br>
+<sub><i>HEC-RAS 2D modeling computational mesh terminology. From HEC-RAS 2D Modeling User Manual. Page 3-5.</i></sub><br>
 
-
- * Center of the cell (Cell Center): Corresponds to the computational center of the cell and is the specific place where the elevation of the water sheet is calculated. Its location is not necessarily located at its centroid.
- * Cell Faces: Corresponds to the specific limits of each cell, they are generally straight lines, however, they can also be made up of multiple nodes, such as the perimeter of 2D drainage areas. A cell can contain a maximum of 8 faces.
- * Cell Face Points (FP): Corresponds to the end points of each side of the cell. These points are used to anchor or connect a 2D area to a 1D element and to recognize cells associated with boundary conditions.
+**Cell Center**:The computational center of the cell. This is where the water surface elevation is computed for the cell. The cell center does not necessarily correspond to the exact cell centroid.
+**Cell Faces**:These are the cell boundary faces. Faces are generally straight lines, but they can also be multi-point lines, such as the outer boundary of the 2D flow area.
+**Cell Face Points**:The cell Face Points (FP) are the ends of the cell faces. The Face Point (FP) numbers for the outer boundary of the 2D flow area are used to hook the 2D flow area to a 1D elements and boundary conditions.
 
 The recommended process for the creation and definition of the two-dimensional mesh of the modeling is presented below.
 
 1. While in edit mode, right-click **Perimeters** and then click **Edit 2D Area Properties**. For the perimeter created, define the cell spacing and click <kbd>Generate Computation Points</kbd>. You can also assign a default value for the Manning roughness coefficient for cells that are not associated with a cap layer, and review the default values ​​for the tolerances.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/8731adac-1f0d-4181-843e-7060bcc6ae55)
+<div align="center">
+<img alt="Fig09" src="images/Fig09.jpg" width="85%">
+</div>
 
-
-> Note: The point spacing controls the overall number of cells and consequently the computational cost and the processing time to solve the 2D model.
+> Note: The point spacing controls the overall number of cells and consequently the computational cost and the processing time to solve the 2D model. The cell spacing should not be smaller than the terrain data resolution.
 
 > **Shape of the cells**: Generally, for irregular 2D Flow Areas, the internal mesh is made of regular structured shape and the border cells of irregular shape, thus creating a composite unstructured mesh. RAS Mapper has been designed to use Unstructured composite meshes, however, depending on the geometry of the 2D Flow Area, it can also work with fully structured meshes. By right-clicking on Perimeters and then clicking on Layer Properties, you can activate the box for generating hexagonal compound cells in Features. You will need to click <kbd>Generate Computation Points</kbd> in the editing window to generate the mesh again.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/f98d8d89-7937-4134-b230-c84dfae4da3c)
+<div align="center">
+<img alt="Fig10" src="images/Fig10.jpg" width="85%">
+</div>
 
 2. Don't forget to save the geometry changes.
 
 ### 2D mesh refinement
 
-After creating the computational mesh, you can add lines or regions for refinement. Cutline refinement is typically used at the crest zones of levees or banks and along roads to define flow limits _ (similar to levees in a 1D model from cross sections). )_ or to control its direction.
+After creating the computational mesh, you can add lines or regions for refinement. Cutline refinement is typically used at the crest zones of levees or banks and along roads to define flow limits, or to control its direction.
 
-Refinement regions work similar to breaklines and are mostly used when refinement lines are close together or when you want to change the internal size of cells and their outline in a given region, for example, in buffer zones. , reservoirs, hydraulic structures, along the entire valley or in areas with closed curved contours.
+Refinement regions work similar to breaklines and are mostly used when refinement lines are close together or when you want to change the internal size of cells and their outline in a given region, for example, in buffer zones, reservoirs, hydraulic structures, along the entire valley or in areas with closed curved contours.
 
 The following is the recommended process for mesh refinement:
 
 1. In edit mode, select **Breaklines** or **Refinement Regions**, depending on whether you will be using lines or regions. Then with the edit bar draw the refinement lines or regions.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/8582f78e-41ba-4901-9da5-d1feba9fc3de)
-
-
 2. Now right click on the **Breaklines** or **Refinement Regions** and select **Enforce All Breaklines** or **Enforce All Regions**, depending on the case. On the map you will see the adjustment made to the mesh with the lines or regions. Save the geometry changes.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/c17f1401-b9d6-4d36-86c4-4d57fd68b7de)
+<div align="center">
+<img alt="Fig11" src="images/Fig11.jpg" width="85%">
+</div>
 
 
 > Note: During refinement, some cells might be geometrically resolved with a greater number of faces than the 8 allowed. For the correction, these cells must be separated into 2 or more, adding additional computation points in edit mode. You can follow this process:
@@ -93,11 +101,5 @@ The following is the recommended process for mesh refinement:
 
 
 ### References
-- [HEC-RAS User's Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/rasum/latest)
-- [HEC-RAS Hydraulic Reference Manual.2020](https://www.hec.usace.army.mil/confluence/rasdocs/ras1dtechref/latest)
-- [HEC-RAS Documentation. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs)
-- [HEC-RAS Mapper User's Manual](https://www.hec.usace.army.mil/confluence/rasdocs/rmum/latest)
 - [HEC-RAS 2D User's Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/r2dum/latest)
-
-
-
+- [HEC-RAS Mapper User's Manual](https://www.hec.usace.army.mil/confluence/rasdocs/rmum/latest)
