@@ -6,7 +6,7 @@ Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Unsteady` `Hydraulic`  `Linux`
 <br>giulia.sofia@uconn.edu<br>
 <br></div>
 
-### Reach
+### Scope
 This class presents the recommended process for running the two-dimensional (2D) simulation in Linux.
 
 ### Goals
