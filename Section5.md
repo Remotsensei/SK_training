@@ -56,14 +56,28 @@ Below is an extract of the script that creates the new tmp.hdf from an input hdf
 
 > Note: the file boundary2CREST.csv can be created using any GIS software, and providing a spatial join between the outlets and the HECras BC. It can also be created manually, provided that the user knows the abovementioned information. Note that the file header **must** be consistent with the example above, for the script to run
 
-### run in linux
+### Folder organization in Linux
 
-1. The provided [[script](https://github.com/Remotsensei/SK_training/script_for_linux.py)] includes the whole pipeline to run the project previously created in linux. 
-to run this script, we need to activate the conda environment by 
+Below is how your folder should be organize, before running the system.
+
+<div align="center">
+<img alt="Fig22" src="images/Fig22.jpg" width="85%">
+</div>
+
+An existing project for linux can be found in \Projects\Linux\Project_linux.zip
+Note that due to the settings of the file run_me, the folders should be organized and named as showed in the image above. If not, you will need to modify the script by hand,  to set the correct folders.
+
+> Note : the bin ras folder must be 'cleared' by running at least once, in the ssh prompt, the following command
+*chmod 755 bin_ras/rasUnsteady64*
+
+
+### Run in linux
+
+1. The provided [[script](https://github.com/Remotsensei/SK_training/run_me.py)] includes the whole pipeline to run the project previously created in linux. 
+To run this script, we need to activate the conda environment by 
 
 *conda activate*
 
-*python*
+*python run_me.py*
 
-
-2. Once the procedure is finalized, we can download the file *.hdf_done* and visualize these results in HEC Ras. For this, rename the 'old' *.p01.hdf* file to *.p01_windows.hdf*, and rename the file *.p01.hdf_done* as the original *p01.hdf*
+2. If everything works as planned, you should see your results in the folder 'results'.
