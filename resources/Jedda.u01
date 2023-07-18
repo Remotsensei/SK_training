@@ -1,0 +1,212 @@
+Flow Title=Event2022_WRF
+Program Version=5.07
+Use Restart= 0 
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 17                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0   7.392 953.5891541.7241369.1241542.473
+1722.4821215.448 627.065 387.073 219.076 111.804  38.244   9.629   3.342   2.742
+   3.984   3.631   2.249   3.455   5.917  10.032   11.47  11.139  22.379  24.503
+  16.626   7.586   2.983   1.062    .351    .106    .029   3.353    .275    .013
+    .001       0       0       0     .57  18.287  38.019  18.497   6.775  47.552
+  42.532  21.549  13.124   9.431   5.192   2.125    .757    .507    .546    .395
+    .193    .071    .021    .005    .001       0       0       0       0       0
+       0       0       0       0       0       0       0       0     .13    1.36
+   1.272    .635    .221     .06    .014    .003       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24nov2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 19                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0  82.156 614.841 396.895  38.632   2.293
+    .108    .005       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0    .006       0       0
+       0       0       0       0       0       0       0   8.283  29.518   1.387
+    .065    .003       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24NOV2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 20                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0180.8479625.47141038.513 620.04379.40739
+7.144364.4961593   .0308   .0018 .0001015.55E-062.98E-071.57E-08 8.2E-104.24E-11
+2.17E-12 1.1E-135.59E-152.81E-161.41E-177.04E-19 3.5E-20   .0671   .0408  .00368
+ .000256 .0000169.34E-075.25E-082.87E-091.54E-108.14E-12 .3375277.96385128.57651
+  2.6686.1877229   .0117 .000689.00003892.13E-061.14E-076.05E-093.16E-101.63E-11
+8.38E-134.26E-142.16E-151.09E-165.45E-182.72E-191.35E-206.72E-223.32E-231.64E-24
+8.07E-263.97E-271.95E-289.52E-304.66E-312.27E-321.11E-335.39E-352.62E-361.27E-37
+6.17E-392.99E-401.45E-417.00E-433.36E-441.40E-45       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24NOV2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 21                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0123.6421283.0163522.4064405.1951118.5982
+13.889021.219074   .0921  .00635 .000412.00002561.53E-068.95E-085.12E-092.87E-10
+1.59E-11 8.7E-13 4.7E-142.52E-151.34E-167.08E-183.71E-19  .00338 .0001587.47E-06
+3.51E-071.65E-087.76E-103.65E-111.71E-12.5928535   .0686  .003353.2369092.937849
+.3480045   .0299  .00221  .000159.65E-065.92E-073.52E-082.04E-091.16E-106.48E-12
+3.57E-131.95E-141.05E-155.61E-172.97E-181.57E-198.19E-214.26E-222.21E-231.14E-24
+5.85E-262.99E-271.52E-287.75E-303.93E-311.98E-32   1E-335.03E-352.52E-361.26E-37
+ 6.3E-393.15E-401.57E-417.80E-433.92E-441.40E-45       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24NOV2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 22                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0  42.673 136.745 145.619 229.286 283.115
+ 138.136  22.249   2.468    .225    .018    .001       0       0       0       0
+       0       0       0       0       0       0    .687     .28    .076    .317
+    .168    .022    .002       0    .399  12.204  11.494   2.607    .692    .086
+    .045    .006    .001       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24nov2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 23                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0402.8698699.0563574.6649734.7178584.6753
+336.0471159.744730.680794.016008.4238102   .0389  .00324  .00025.00001841.29E-06
+8.69E-085.69E-093.64E-102.27E-111.39E-12 8.4E-144.99E-15.9712097.97921251.587898
+.3888087.1796176   .0294  .00333 .000309.36962319.61961413.363983.356686 3.98686
+3.060917.4442061   .0445  .00374.0002828.00001991.33E-06 8.5E-085.28E-09 3.2E-10
+ 1.9E-111.11E-126.36E-14 3.6E-152.02E-161.12E-176.16E-193.36E-201.82E-21 9.8E-23
+5.24E-242.79E-251.48E-267.77E-284.08E-292.13E-301.11E-315.76E-332.98E-341.54E-35
+ 7.9E-374.05E-382.06E-391.05E-405.36E-422.74E-431.40E-441.40E-45       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24Nov2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 24                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0 121.667 325.969 349.421 129.407  31.546
+   5.205    .569    .051    .004       0       0       0       0       0       0
+       0       0       0       0       0       0       0    1.32    .442    .794
+    .055    .058    .008  30.893   7.702   7.771   1.656   2.069     .64    .087
+    .009    .001       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24nov2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 25                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0  132.66 235.694 669.5711745.5542676.352
+2313.7761666.5561599.3161760.6771463.005  837.37 490.702 277.749 147.505  57.898
+  17.106    5.16   2.992   3.714   3.826   2.738   2.945   4.809   8.898  11.742
+  11.267  21.032  25.246  19.162  10.029   4.348    1.68    .597    .198    .651
+   3.193   1.086    .226    .033    .004       0       0    .229   6.466   38.86
+  24.229   9.154   41.75  42.987  24.639  14.448  11.092   7.203   3.445    1.33
+    .597    .563    .473    .274    .117     .04    .011    .003    .001       0
+       0       0       0       0       0       0       0       0       0       0
+       0    .073   1.196   1.308    .755    .302    .094    .024    .005    .001
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24nov2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 26                      
+Interval=1HOUR
+Flow Hydrograph= 120 
+       0       0       0       0       0188.8406440.8952770.93281223.717810.7308
+135.979115.520061.371367.1046291  .00727 .000474.00002961.78E-061.04E-075.99E-09
+3.37E-101.87E-111.03E-125.56E-142.98E-151.59E-16 8.4E-184.41E-19.0548005.0587361
+  .00791 .000732 .000057 .0000042.62E-071.64E-089.89E-10 5.8E-11.1431264 7.75185
+27.621083.843216.3596534   .0281  .00197  .000138.15E-064.92E-072.89E-081.66E-09
+9.36E-11 5.2E-122.85E-131.55E-14 8.3E-164.42E-172.34E-181.23E-196.41E-213.33E-22
+1.72E-238.86E-254.54E-262.32E-271.18E-28   6E-303.03E-311.53E-327.71E-343.88E-35
+1.94E-369.72E-384.85E-392.42E-401.18E-415.98E-432.94E-441.40E-45       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0       0       0
+Stage Hydrograph TW Check=0
+Flow Hydrograph Slope= 0.015 
+DSS Path=
+Use DSS=False
+Use Fixed Start Time=True
+Fixed Start Date/Time=24nov2022,00:00
+Is Critical Boundary=False
+Critical Boundary Flow=
+Boundary Location=                ,                ,        ,        ,                ,Perimeter 1     ,                ,BC Line 28                      
+Friction Slope=0.015,-1

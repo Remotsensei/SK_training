@@ -56,7 +56,7 @@ A computational mesh or grid is created from the definition of a 2D drainage are
 
 The recommended process for the creation and definition of the two-dimensional mesh of the modeling is presented below.
 
-1. While in edit mode, right-click **Perimeters** and then click **Edit 2D Area Properties**. For the perimeter created, define the cell spacing and click <kbd>Generate Computation Points</kbd>. You can also assign a default value for the Manning roughness coefficient for cells that are not associated with a cap layer, and review the default values ​​for the tolerances.
+1. While in edit mode, right-click **Perimeters** and then click **Edit 2D Area Properties**. For the perimeter created, define the cell spacing and click <kbd>Generate Computation Points</kbd>. You can also assign a default value for the Manning roughness coefficient for cells that are not associated with a cap layer, and review the default values ​​for the tolerances. To avoid memory issues, for this tutorial we can set the mesh size to 100m.
 
 <div align="center">
 <img alt="Fig09" src="images/Fig09.jpg" width="85%">
