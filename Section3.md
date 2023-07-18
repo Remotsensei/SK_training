@@ -13,11 +13,10 @@ This class presents the recommended process for the definition of the Manning co
 
 * Know the procedure for loading land cover maps.
 * Know the procedure for the adjustment and edition of the geometry from the information of Manning coefficients.
-* Plot the upstream and downstream boundary condition.
+* Set the upstream and downstream boundary conditions.
 #### Land cover maps
 
-It is common for a project that involves  hydraulic modeling to have additional information such as land cover and land use. 
-Based on this information on land cover and land use, it is possible to associate said information with **n** values ​​of the Manning coefficient, taking into account the recommendations mentioned in literature, attributing standard coefficients to standard landcovers. The following image shows for examle, the suggested the association, where a value **n** is assigned to different land cover characteristics.
+From an analytical point of view, it is possible to associate landcover data with **n** values ​​of the Manning coefficient, taking into account the recommendations mentioned in literature, attributing standard coefficients to standard landcovers. The following image shows for example, the suggested association, where a value **n** is assigned to different land cover characteristics.
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/eb6ebd6f-48ac-4381-a7b6-7e4093621030)
 
@@ -44,28 +43,29 @@ The ESA landcover classes are as follows
 
 > Note: the files downloaded from the above repositories are in geographic coordinates. You will need to reproject them to be consistent with the project coordinate system.
   
-2. In the HEC tool go to the RAS Mapper tool. Now we import the file in vector format with geographic elements by clicking on **Project → Tools → New Land Cover**
-   In the displayed window select the <kbd>+</kbd> icon to add the file. Then select the file extension as **"Geometries"** and then add the Manning coefficients field (click <kbd>Add Fiel...</kbd> ).
-Review the classification names and information in the output file. Finally click on <kbd>Crate</kbd> and the process will start.
+2. From the HEC GUI go to RAS Mapper. We can import the file in raster format by clicking on **Project → Tools → New Land Cover**
+   In the displayed window select the <kbd>+</kbd> icon to add the file. Then add the Manning coefficients. We will start with the recommended value, and then do a further run using the higher end of the table above.
+Review the classification names and information in the output file. Finally, click on <kbd>Crate</kbd> and the process will start.
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/caba1841-c194-4982-9d81-4f1b2ee623f8)
 
  
-4. Once the layer is created, you can view and review the information generated in the RAS Mapper.
+4. Once the layer is created, you can view and review the information generated in RAS Mapper.
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/6010108e-275e-48e0-9017-68049dc6750f)
 
 
-5. It is important to associate this layer to the geometry data. This is a commonly overlooked step for new users.
+5. It is important to associate this layer with the geometry data. This is a commonly overlooked step for new users.
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/0097a7db-423b-4b17-85eb-8fe2bf4ad533)
 
 
 ### Boundary conditions
 
-The spatial location of two different boundary conditions (BC – Boundary Condition Line) must not be defined on the same grid cell. Multiple boundary conditions can be added to the composite mesh. Multiple inlet hydrographs may be associated, for example, in the mainstem and laterals.
+> Note: The spatial location of two different boundary conditions (BC – Boundary Condition Line) can not be defined on the same grid cell.
 
-For modeling, at least one boundary condition line upstream and one downstream must be entered. Boundary condition lines can be drawn internally or externally. For example, base flow or ground flow can be defined in any internal zone of the model. BC lines can be drawn or imported using a shapefile.
+Multiple boundary conditions can be added to the composite mesh, and each can be associated to a hydrograph.
+For modeling, at least one boundary condition line upstream and one downstream must be entered. Boundary condition lines can be drawn internally or externally, and they can be drawn or imported using a shapefile.
 
 The following is the recommended process for importing the lines
 
