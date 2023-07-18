@@ -28,7 +28,7 @@ The following is the recommended process for creating the RAS Mapper project and
 
 1. Once the program starts, go to the menu **File → New Project** (File →New Project). In the pop-up window you can indicate the name of the project to be created and click <kbd>OK</kbd>. Review and/or adjust the unit system to be used in the **Options → Unit system** menu.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/8f25f50e-1755-4e1d-b091-696b48bac261)
+![image](https://github.com/Remotsensei/SK_training/images/Fig01.jpg)
 
 2. Access the RAS Mapper tool by clicking on the **Mapper** button. Then select **Tools → Set Projection System** (Tools → Set Projection for Project). In the popup window, select the projection file to use.
 
