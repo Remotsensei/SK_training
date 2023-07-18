@@ -7,7 +7,7 @@ Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Unsteady` `Hydraulic`
 <br></div>
 
 ### Reach
-This class presents the recommended process for setting the input flows, and do a (2D) simulation in unsteady flow conditions.
+This section highlights the procedures to set the input flows, and do a (2D) simulation in unsteady flow conditions.
 
 ### Goals
 

@@ -6,7 +6,7 @@ Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Mesh`
 </div>
 
 ### Scope
-This class presents the recommended process for the delimitation of the domain area and the creation of the mesh of the two-dimensional (2D) model.
+This section presents the recommended steps to defain the 2d domain area, and set the computational mesh
 
 ### Goals
 

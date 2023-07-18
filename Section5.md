@@ -7,14 +7,13 @@ Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Unsteady` `Hydraulic`  `Linux`
 <br></div>
 
 ### Scope
-This class presents the recommended process for running the two-dimensional (2D) simulation in Linux.
+This section presents the recommended steps for running the two-dimensional (2D) simulation in Linux.
 
 ### Goals
 
 * Prepare the project
 * Prepare the input flows
 * Run the python scripts
-* Launch HEC-Ras to run the two-dimensional hydraulic simulation.
 
 ### HEC RAS Linux packet
 The RAS_507_linux.zip contains the rasUnsteady64 Linux executable and supporting libraries

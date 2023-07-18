@@ -7,7 +7,7 @@ Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Unsteady` `Hydraulic` `Manning
 <br></div>
 
 ### Scope
-This class presents the recommended process for the definition of the Manning coefficient in the hydraulic model from a land cover file using RAS Mapper.
+This section presents the recommended steps to set the Manning coefficient in the hydraulic model starting from a land cover file.
 
 ### Goals
 

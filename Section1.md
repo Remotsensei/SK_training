@@ -6,7 +6,7 @@ Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Terrain`
 </div>
 
 ### Scope
-This class presents the recommended process for project creation, RAS Mapper configuration, and terrain model creation.
+This section presents the recommended steps to create a project, provide the correct configuration for RAS Mapper, and create the main terrain model.
 
 ### Goals
 * Create the HEC-RAS project and set the general configuration of RAS Mapper.
