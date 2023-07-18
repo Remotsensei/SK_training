@@ -39,10 +39,7 @@ From an analytical point of view, it is possible to associate landcover data wit
 
 The ESA landcover classes are as follows
 
-<td><p>Landcover class</p></td>
-</tr>
 </table>
-<p><b>Map Class Table</b>
 <table class="eecat">
 <tr>
 <th scope="col">Value</th>
