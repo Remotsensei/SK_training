@@ -34,7 +34,9 @@ The following is the recommended process for creating the RAS Mapper project and
 
 2. Access the RAS Mapper tool by clicking on the **Mapper** button. Then select **Tools → Set Projection System** (Tools → Set Projection for Project). In the popup window, select the projection file to use.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/ce3a94f9-6234-4b91-b271-4a61fe960117)
+<div align="center">
+<img alt="Fig02" src="images/Fig02.jpg" width="85%">
+</div>
 
 *note that it is important to increase the number of decimal places in the elevation and accuracy, to avoid issues*
 
@@ -45,36 +47,34 @@ The following is the recommended process for creating the RAS Mapper project and
    - Layer settings (Global Settings- RAS Layers): Contains the visualization symbology of different layers that make up the model.
    - Editing Tools (Global Settings- Editing Tools): Contains the symbology of the editing tools and the approximation tolerances for nearby points and lines.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/a3205b73-6599-4a1f-b629-1ca7bc0f02f9)
-
 
 ### Terrain model creation and processing
 
 The following is the recommended process for creating and processing the terrain model.
 
-1. In the RAS Mapper we go to the menu **Project → Create new RAS terrain** (Project → Create New Ras Terrain).
-
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/33d6b962-ba6c-4fee-bd32-6fd0bbf9b817)
-
-
+1. In the RAS Mapper go to **Tools → new terrain**
 2. In the displayed window **New Terrain Layer** (New Terrain Layer), you can load the information in Raster format (GDAL library, Raster Floating Point Format type, and GRID). There you can upload one or several files and even merge (merge) several raster files into the new RAS terrain model. In the window you can select the rounding or precision of the new file, the creation of stitches (stitches) if a union (merge) is made, the conversion or not of units and the name of the file to be created. The new file will be saved by default in the **Terrain** folder in *.hdf* format.
-
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/5ba7d796-f03d-4ffa-9633-337141a65f34)
-
-
 3. Click **Create** and a window will open with the creation process.
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/a975cd8c-0fd1-4099-8840-cef17c31abd6)
+
+<div align="center">
+<img alt="Fig03" src="images/Fig03.jpg" width="85%">
+</div>
+
 
 4. Next, you will be able to view the terrain created in the RAS Mapper. You can also modify the display options.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/df62bcf4-60de-4fac-8940-072c0f008ed3)
+<div align="center">
+<img alt="Fig04" src="images/Fig04.jpg" width="85%">
+</div>
+
 
 ### Public domain maps and images
 
 An additional feature of RAS Mapper is the inclusion of background maps and satellite images. This feature can only be used if the project has been assigned a coordinate projection system. To add, right click on **Map Layers → AddWebImageryLayer** and choose, for example, Google's satellite image and Nearest Neighbor as sampling method. From the image properties, set transparency to about 25%.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/be203788-0905-40e0-a24b-fcef16e46313)
-
+<div align="center">
+<img alt="Fig05" src="images/Fig05.jpg" width="85%">
+</div>
 
 ### References
 - [HEC-RAS User's Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/rasum/latest)
