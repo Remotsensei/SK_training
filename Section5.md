@@ -51,8 +51,8 @@ Below is an extract of the script that creates the new tmp.hdf from an input hdf
 </div>
 
 2. In addition to these files, the system needs 
-	- a *.csv file [boundary2CREST.csv] that links the names of the BC in hecras, to the names of the corresponding outlets from CREST
-	- a folder named 'input_flows' where all the CSVs for the CREST outlets are stored. For this example, we can upload the results from the radar analysis, found in *resources/inputFlows_WRF.zip
+	- a *.csv file [*boundary2CREST.csv*] that links the names of the BC in hecras, to the names of the corresponding outlets from CREST
+	- a folder named 'input_flows' where all the CSVs for the CREST outlets are stored. For this example, we can upload the results from the radar analysis, found in *resources/inputFlows_WRF.zip*
 
 > Note: the file boundary2CREST.csv can be created using any GIS software, and providing a spatial join between the outlets and the HECras BC. It can also be created manually, provided that the user knows the abovementioned information. Note that the file header **must** be consistent with the example above, for the script to run
 
@@ -62,6 +62,8 @@ Below is an extract of the script that creates the new tmp.hdf from an input hdf
 to run this script, we need to activate the conda environment by 
 
 *conda activate*
+
 *python*
+
 
 2. Once the procedure is finalized, we can download the file *.hdf_done* and visualize these results in HEC Ras. For this, rename the 'old' *.p01.hdf* file to *.p01_windows.hdf*, and rename the file *.p01.hdf_done* as the original *p01.hdf*
