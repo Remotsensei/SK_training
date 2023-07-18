@@ -36,7 +36,10 @@ From an analytical point of view, it is possible to associate landcover data wit
   you can optionally download the data using the dedicated web-browser
   https://viewer.esa-worldcover.org/worldcover/
   if you create a registered user
-
+  
+> Note: the files downloaded from the above repositories are in geographic coordinates. You will need to reproject them to be consistent with the project coordinate system.
+ 
+ 
 The ESA landcover classes are as follows
 
 </table>
@@ -104,24 +107,24 @@ The ESA landcover classes are as follows
 </table>
 <sub><i>Landcover class [Source: https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100]</i></sub><br>
 
-> Note: the files downloaded from the above repositories are in geographic coordinates. You will need to reproject them to be consistent with the project coordinate system.
-  
+ 
 2. From the HEC GUI go to RAS Mapper. We can import the file in raster format by clicking on **Project → Tools → New Land Cover**
-   In the displayed window select the <kbd>+</kbd> icon to add the file. Then add the Manning coefficients. We will start with the recommended value, and then do a further run using the higher end of the table above.
+   In the displayed window select the <kbd>+</kbd> icon to add the file. Then we have to create the correct legend (3), and add the Manning coefficients for each class (4). 
+   We will start with the recommended value, and then do a further run using the higher end of the table above.
+   
 Review the classification names and information in the output file. Finally, click on <kbd>Crate</kbd> and the process will start.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/caba1841-c194-4982-9d81-4f1b2ee623f8)
+<div align="center">
+<img alt="Fig12" src="images/Fig12.jpg" width="85%">
+</div>
 
- 
 4. Once the layer is created, you can view and review the information generated in RAS Mapper.
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/6010108e-275e-48e0-9017-68049dc6750f)
+ >Note: It is important to associate this layer with the geometry data. This is a commonly overlooked step for new users.
 
-
-5. It is important to associate this layer with the geometry data. This is a commonly overlooked step for new users.
-
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/0097a7db-423b-4b17-85eb-8fe2bf4ad533)
-
+<div align="center">
+<img alt="Fig13" src="images/Fig13.jpg" width="85%">
+</div>
 
 ### Boundary conditions
 
@@ -132,11 +135,13 @@ For modeling, at least one boundary condition line upstream and one downstream m
 
 The following is the recommended process for importing the lines
 
-1. In RAS Mapper edit mode, display the **Geometries** and **2D Flow Areas** tree. Then select the boundary condition lines and click layer properties. From there, select 'features' and select 'import features'
+1. In RAS Mapper edit mode, display the **Geometries** and **2D Flow Areas** tree. Then select the boundary condition lines and click layer properties. From there, select 'features' and select 'import features'. We can import the file BC.shp
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/e1631fc4-904a-4e23-938c-3c901c98011a)
+<div align="center">
+<img alt="Fig14" src="images/Fig14.jpg" width="85%">
+</div>
 
-Once you imported the features, you have to make sure that the lines are all covered by the extent of the domain, and by the computational area. The only exception is the downstream condition, which can be 'External'. In RAS Mapper edit mode, you can manually adjust the features and eventually delete those that you do not need, or add more where needed.
+Once you imported the features, you have to make sure that the lines are all covered by the extent of the domain, and by the computational area. The only exception is the downstream condition, which can be 'External' [In this project, this downstream feature corresponds to the BC 28]. In RAS Mapper edit mode, you can manually adjust the features and eventually delete those that you do not need, or add more where needed.
 
 
 The following is the recommended process for drawing the lines
