@@ -105,7 +105,9 @@ The ESA landcover classes are as follows
 <td>Moss and lichen</td>
 </tr>
 </table>
+
 <sub><i>Landcover class [Source: https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100]</i></sub><br>
+
 
  
 2. From the HEC GUI go to RAS Mapper. We can import the file in raster format by clicking on **Project → Tools → New Land Cover**
@@ -141,12 +143,10 @@ The following is the recommended process for importing the lines
 <img alt="Fig14" src="images/Fig14.jpg" width="85%">
 </div>
 
-Once you imported the features, you have to make sure that the lines are all covered by the extent of the domain, and by the computational area. The only exception is the downstream condition, which can be 'External' [In this project, this downstream feature corresponds to the BC 28]. In RAS Mapper edit mode, you can manually adjust the features and eventually delete those that you do not need, or add more where needed.
+Once you imported the features, you have to make sure that the lines are all covered by the extent of the domain, and by the computational area. Boundary conditions must allways be set as 'Internal'. The only exception is the downstream condition, which can be 'External' [In this project, this downstream feature corresponds to the BC 28]. In RAS Mapper edit mode, you can manually adjust the features and eventually delete those that you do not need, or add more where needed.
 
 
-The following is the recommended process for drawing the lines
-
-1. In RAS Mapper edit mode, display the **Geometries** and **2D Flow Areas** tree. Then select the boundary condition lines and with the edit bar draw in plan the upstream and downstream BC lines. Take into account that the traced line must be located in front of the cells of the channel zone. It is recommended to draw lines BC from left to right taking the flow direction as a reference. When finished, save the editing changes.
+If you have to manually draw the lines, you can follow the following procedure. In RAS Mapper edit mode, display the **Geometries** and **2D Flow Areas** tree. Then select the boundary condition lines and with the edit bar draw in plan the upstream and downstream BC lines. Take into account that the traced line must be located in front of the cells of the channel zone. It is recommended to draw lines BC from left to right taking the flow direction as a reference. When finished, save the editing changes.
 
 
 ### References

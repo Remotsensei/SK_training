@@ -7,7 +7,7 @@ Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Unsteady` `Hydraulic`
 <br></div>
 
 ### Reach
-This class presents the recommended process for the definition of data and boundary conditions and the two-dimensional (2D) simulation in unsteady flow conditions.
+This class presents the recommended process for setting the input flows, and do a (2D) simulation in unsteady flow conditions.
 
 ### Goals
 
@@ -17,15 +17,74 @@ This class presents the recommended process for the definition of data and bound
 * Define the system of equations to solve the hydraulic model.
 * Run the two-dimensional hydraulic simulation.
 
+### Make sure geometry is correctly loaded
+
+It can happen that HEC-RAS does not automatically load the geometry created in the previous steps. If the line for geometry remains blank in the main GUI, go to **Edit → Geometric data** and in the new popup window, select **Open geometry data**
+In the window, point to the geometry file created in the previous section. Click the <kbd button >**OK**</kbd> and exit this window.
+
+<div align="center">
+<img alt="Fig15" src="images/Fig15.jpg" width="85%">
+</div>
+
 ### Flow information and boundary conditions
 
 1. To start, we are going to enter the **Unsteady flow data** window, from the menu **Edit → Unsteady flow data**. In the popup window select **File → New/Save unsteady flow data** and enter the name you want to give the flow data and click the <kbd button >**OK**</kbd>.
 
 
-![image](https://github.com/Remotsensei/SK_training/assets/127943691/f8c1406d-7cb7-4ca0-a008-643f8260a936)
+<div align="center">
+<img alt="Fig16" src="images/Fig16.jpg" width="85%">
+</div>
 
 
-2. In the **Unsteady flow data** window, you can enter a description of the flow information, as well as define the boundary conditions, initial conditions and add meteorological or observed information in the system to model. For this exercise, we will add a flow hydrograph upstream of the channel for each upstream, and define smooth flow in the downstream section (BC Line 28). Once you enter all the information click on the <kbd>**Apply Data**</kbd> button that you will find in the upper right part of the window. Finally, select <kbd>**Plot Data**</kbd> to verify and review the data upload. Remember to save the changes made to the flow characteristics and hydraulic conditions
+2. In the **Unsteady flow data** window, you can enter a description of the flow information, as well as define the boundary conditions, initial conditions and add meteorological or observed information in the system to model. For this exercise, we will add a flow hydrograph upstream of the channel for each upstream, and define smooth flow in the downstream section (BC Line 28). 
+
+
+3. Hydrographs as upstream conditions: from the resource folder, you can find the flows simulated for the 2022 event, at each outlet [resources/inputFlows_WRF.zip]. 
+The BC numbers corresponds to the folling outlets
+
+</table>
+<table class="eecat">
+<tr>
+<th scope="col">BC name HEC_RAS</th>
+<th scope="col">Outlet name CREST</th>
+</tr>
+<tr>
+<td>BC Line 17</td>
+<td>372780_5.csv</td>
+</tr>
+<tr>
+<td>BC Line 18</td>
+<td>372780_8.csv</td>
+</tr>
+<tr>
+<td>BC Line 19</td>
+<td>372766_1.csv</td>
+</tr>
+<td>BC Line 20</td>
+<td>372766_2.csv</td>
+</tr>
+<td>BC Line 21</td>
+<td>372613_3.csv</td>
+</tr>
+<td>BC Line 22</td>
+<td>372613_2.csv</td>
+</tr>
+<td>BC Line 23</td>
+<td>372613_1.csv</td>
+</tr>
+<td>BC Line 24</td>
+<td>372522.csv</td>
+</tr>
+<td>BC Line 25</td>
+<td>372780_2.csv</td>
+</tr>
+<td>BC Line 26</td>
+<td>372766_3.csv</td>
+</tr>
+</table>
+
+
+Once you enter all the information click on the <kbd>**Apply Data**</kbd> button that you will find in the upper right part of the window. Finally, select <kbd>**Plot Data**</kbd> to verify and review the data upload. Remember to save the changes made to the flow characteristics and hydraulic conditions
 
 ![image](https://github.com/Remotsensei/SK_training/assets/127943691/579fcb5d-1331-4bc4-ac04-cfa5749b75a7)
 
@@ -59,8 +118,5 @@ The SWE solution method (formerly *full momentum*), is more conservative of mome
 
 
 ### References
-- [HEC-RAS User’s Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/rasum/latest)
-- [HEC-RAS Hydraulic Reference Manual.2020](https://www.hec.usace.army.mil/confluence/rasdocs/ras1dtechref/latest)
-- [HEC-RAS Documentation. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs)
+- [HEC-RAS 2D User's Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/r2dum/latest)
 - [HEC-RAS Mapper User's Manual](https://www.hec.usace.army.mil/confluence/rasdocs/rmum/latest)
-- [HEC-RAS 2D User’s Manual. US Army Corps of Engineers.](https://www.hec.usace.army.mil/confluence/rasdocs/r2dum/latest)
