@@ -48,5 +48,5 @@ Start a new plan, and run the software. Compare the results
 
   
 <div align="center">
-<img alt="catt" src="images/cattura.png" width="85%">
+<img alt="catt" src="images/Cattura.png" width="85%">
 </div>
