@@ -1,3 +1,19 @@
+## QGIS Terrain model creation and processing
+
+Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Terrain`
+
+<div align="center">
+<br>giulia.sofia@uconn.edu<br>
+</div>
+
+### Scope
+This section presents the recommended steps to create a project, provide the correct configuration for RAS Mapper, and create the main terrain model.
+
+### Goals
+* Create and dowload public terrain and landuse datasets
+* Embed hydraulic structures on terrain
+
+
 ### DEM Access via OpenTopography's API
 Users can get terrain data product by using OpenTopography's API. Users can build the REST API call and it will output the appropriate request to use in a curl command, or a http GET request. Here is the URL request that can be used via https for COP30 data over Jeddah:
 
@@ -16,9 +32,9 @@ We rely on existing global DEMs at 30m. These data can be downloaded for multipl
 
 To ‘automate’ the download, we can use a python routine in QGIS that relies on the package dem-stitcher to ‘fix’ the terrain data based on a certain extent and ‘rasterio’ to deal with rasters
 
-a.	Open OSGeo4W Shell as an administrator
-b.	pip install dem-stitcher
-c. 	pip install rasterio
+	a.	Open OSGeo4W Shell as an administrator
+	b.	pip install dem-stitcher
+	c. 	pip install rasterio
 
 After this, you can launch Qgis
 
@@ -27,13 +43,18 @@ WhiteboxTools is an advanced geospatial data analysis platform created by Prof. 
 For this, we need to install the toolbox in qgis
 From the main menu’ select ‘Plugins’
 
- 
-
-
+ <div align="center">
+<img alt="Fig01" src="images/picture1.png" width="85%">
+</div>
 
 Then select’ ALL’
 And start searching for whitebox workflows for qgis
- 
+
+ <div align="center">
+<img alt="Fig02" src="images/picture2.png" width="85%">
+</div>
+
+
 Install the plugin by clicking ‘install plugin’
 
 ------------------------------------
@@ -44,34 +65,69 @@ In Qgis, we can ‘draw’ the area for which we want to run our analysis. At th
 
 a.	Add the boundary condition file (BoundaryConditions.shp)
 b.	Create an empty layer  and save it in your working folder
- 
+
+  <div align="center">
+<img alt="Fig03" src="images/picture3.png" width="85%">
+</div>
+
 
 c.	Set the parameters for the file
 It is important to set a path where to save, select the type as polygon, and set the coordinates as EPSG: 4326 WGS84  (we need this at this stage, to be able to download the terrain data)
- 
+
+  <div align="center">
+<img alt="Fig04" src="images/picture4.png" width="85%">
+</div>
+
 Once the layer is added automatically, right click on it, and set it as editable
- 
+
+
+  <div align="center">
+<img alt="Fig05" src="images/picture5.png" width="85%">
+</div>
+
 
 d.	Draw a bounding box able to contain the whole extent of the BCs
 
 On the toolbar, activate the ‘polygon’ tool
- 
+
+  <div align="center">
+<img alt="Fig06" src="images/picture6.png" width="85%">
+</div>
+
 Once you do this, you will have a ‘shape digitizing’ toolbar, with the option to add a rectangle
 There is a Shape Digitizing toolbar which has an option to add rectangle using different methods:
  
+  <div align="center">
+<img alt="Fig07" src="images/picture7.png" width="85%">
+</div>
+
 To show the toolbar, right-click the main menu and select Shape Digitizing toolbar
 	
- 
+ <div align="center">
+<img alt="Fig08" src="images/picture8.png" width="85%">
+</div>
+
 
 Add a field to the layer, using the field calculator. 
- 
+
+  <div align="center">
+<img alt="Fig09" src="images/picture9.png" width="85%">
+</div>
+
 Set the field name ‘layer’ and content as ‘area1’. Set the field type as ‘string’
- 
+
+  <div align="center">
+<img alt="Fig10" src="images/picture10.png" width="85%">
+</div>
+
 Save the editing by making the layer ‘uneditable’, and confirm the changes
 
 3.	Get the terrain data
 
 a.	Load the python console in qgis
+ <div align="center">
+<img alt="Fig11" src="images/picture11.png" width="85%">
+</div>
 
  
 
@@ -89,21 +145,37 @@ Run the script.
 Load the files for rain_water_network and surface_water_network
 
 Activate the toolbox bar, from the menu ‘processing’
- 
+
+  <div align="center">
+<img alt="Fig12" src="images/picture12.png" width="85%">
+</div>
+
 
 In the toolbox bar, navigate to the whitebox workflows, go to ‘hydrology’
 Then ‘fill_burn’
- 
+  <div align="center">
+<img alt="Fig13" src="images/picture13.png" width="85%">
+</div>
+
 
 Run the tool, using the rain network first. Let’s use the DEM produced at the previous step, as stream we select the Rain_water_network, ad select an appropriate output path
- 
+
+  <div align="center">
+<img alt="Fig14" src="images/picture14.png" width="85%">
+</div>
+
 
 Repeat the step, but using the dem burned, and adding the surface water network
  
 
+ <div align="center">
+<img alt="Fig15" src="images/picture15.png" width="85%">
+</div>
+
+
 Let’s observe differences.
  
-LANDUSE PREPARATION
+### LANDUSE PREPARATION
 
 To ‘automate’ the download, we can use a python routine in QGIS that relies on the package dem-stitcher to ‘fix’ the terrain data based on a certain extent.
 Load the file esa_worldcover_2020_grid
@@ -122,4 +194,7 @@ Run the script.
 
 Let’s load the dataset and observe it
 
- 
+  <div align="center">
+<img alt="Fig16" src="images/picture16.png" width="85%">
+</div>
+
