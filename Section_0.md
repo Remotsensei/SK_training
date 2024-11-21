@@ -215,6 +215,6 @@ Run the script.
 Let’s load the dataset and observe it
 
   <div align="center">
-<img alt="Fig16" src="images/picture16.png" width="85%">
+<img alt="Fig16" src="images/Picture16.png" width="55%">
 </div>
 
