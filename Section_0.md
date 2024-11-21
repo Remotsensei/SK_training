@@ -25,7 +25,7 @@ Note that the DEMs downloaded from this API are in degrees. The data must be con
 
 ### TERRAIN PREPARATION IN QGIS
 
-1.	Pre-requisites
+<ins> 1.	 Pre-requisites</ins>
 
 We rely on existing global DEMs at 30m. These data can be downloaded for multiple sources, directly from the Copernicus GLO-30
 [https://registry.opendata.aws/copernicus-dem/]
@@ -59,7 +59,7 @@ Install the plugin by clicking ‘install plugin’
 
 ------------------------------------
 
-2.	Define your area of interest
+<ins> 2.	Define your area of interest </ins>
 
 In Qgis, we can ‘draw’ the area for which we want to run our analysis. At this stage, we can draw a simple ‘square’ area, around Jeddah, to get the bounding box of our entire domain. We will further improve this area for HEC ras in the following exercise.
 
@@ -122,25 +122,27 @@ Set the field name ‘layer’ and content as ‘area1’. Set the field type as
 
 Save the editing by making the layer ‘uneditable’, and confirm the changes
 
-3.	Get the terrain data
+------------------------------------
+
+<ins> 3.	Get the terrain data </ins>
 
 a.	Load the python console in qgis
+
  <div align="center">
 <img alt="Fig11" src="images/Picture11.png" width="85%">
 </div>
 
  
-
 To ‘automate’ the download, we can use a python routine in QGIS that relies on the package dem-stitcher to ‘fix’ the terrain data based on a certain extent.
 Load the script GEtglo30.py
 Set the path where you want to save the DEM file at the 
 outputFolder=’’
 
-
 Run the script.
 
+------------------------------------
 
-4.	Alter the terrain
+<ins> 4.	Alter the terrain </ins> 
 
 Load the files for rain_water_network and surface_water_network
 
