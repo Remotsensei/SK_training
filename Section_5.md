@@ -40,4 +40,13 @@ Repeat the steps to create the manning file, and create a new file Manning2. Att
 Make sure you attribute this manning to the geometry. 
 Start a new plan, and run the software. Compare the results
 
-### Mannings
+### Plan settings
+
+* Switch the computation option to Either full momentum, or diffusion wave
+* Add a warmup time of 6 hrs
+* Change the computational timestep to dynamic
+
+  
+<div align="center">
+<img alt="catt" src="images/cattura.png" width="85%">
+</div>
