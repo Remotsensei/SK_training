@@ -14,14 +14,6 @@ This section presents the recommended steps to create a project, provide the cor
 * Visualize and represent the terrain model in RAS Mapper.
 * Associate maps and public domain images as background.
 
-### DEM Access via OpenTopography's API
-Users can get terrain data product by using OpenTopography's API. Users can build the REST API call and it will output the appropriate request to use in a curl command, or a http GET request. Here is the URL request that can be used via https for COP30 data over Jeddah:
-
-[https://portal.opentopography.org/API/globaldem?west=1&east=2&north=3&south=4&outputFormat=GTiff&demtype=COP30&API_Key=3bcf47df576e2b194d675751e70f98a5
-](https://portal.opentopography.org/API/globaldem?west=39.11007123294027&east=40.66417151110259&north=21.70811841496722&south=21.055901572307814&outputFormat=GTiff&demtype=COP30&API_Key=3bcf47df576e2b194d675751e70f98a5)
-
-Note that the DEMs downloaded from this API are in degrees. The data must be converted to meters for better processing in HEC-RAS 
-
 ### Project creation and RAS-Mapper configuration
 
 The following is the recommended process for creating the RAS Mapper project and configuring it.
