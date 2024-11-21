@@ -25,8 +25,19 @@ The following image shows for example, the suggested association, where a value 
 
 Repeat the steps to create the manning file, and create a new file Manning2. Attribute this file to the geometry, and change the values of mannings
 
-| Landuse  | previous value | Next value |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Landuse  | previous value | Updated value |
+| ------------- | ------------- | ------------- |
+| tree cover  | 0.1  | 0.2 |
+| shrubland | 0.08  | 0.16 |
+| grassland | 0.04  | 0.05 |
+| croplad | 0.05  | 0.020 |
+| built up | 0.15  | 0.2 |
+| bare/sparse | 0.03  | 0.023 |
+| permanent water bodies | 0.035  | 0.035 |
+| herbaceous | 0.06  | 0.05 |
+| mangroves | 0.1  | 0.06 |
 
+Make sure you attribute this manning to the geometry. 
+Start a new plan, and run the software. Compare the results
+
+### Mannings
