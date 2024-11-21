@@ -179,6 +179,24 @@ Let’s observe differences.
  
 ### LANDUSE PREPARATION
 
+<ins> 1. Free high resolution landcover data </ins>
+
+They can be obtained from
+
+  https://zenodo.org/record/7254221
+  at 10m, or
+  https://zenodo.org/record/3939050
+  at 100m
+
+  you can optionally download the data using the dedicated web-browser
+  https://viewer.esa-worldcover.org/worldcover/
+  if you create a registered user
+  
+> Note: the files downloaded from the above repositories are in geographic coordinates. You will need to reproject them to be consistent with the project coordinate system.
+
+<ins> 2. QGIS download </ins>
+
+
 To ‘automate’ the download, we can use a python routine in QGIS that relies on the package dem-stitcher to ‘fix’ the terrain data based on a certain extent.
 Load the file esa_worldcover_2020_grid
 
