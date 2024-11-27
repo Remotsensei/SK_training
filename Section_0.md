@@ -13,6 +13,25 @@ This section presents the recommended steps to create a project, provide the cor
 * Create and dowload public terrain and landuse datasets
 * Embed hydraulic structures on terrain
 
+### Useful QGIS Plugins
+The QuickMapServices plugin is a simple and easy to use plugin that adds base maps to your QGIS project.
+Install the QuickMapServices plugin.
+Go to plugins > manage plugins > All > search for QuickMapServices and install
+
+
+<div align="center">
+<img alt="quickmap" src="images/quickmapservices.png" width="55%">
+</div>
+
+
+Click on Web ► QuickMapServices. The first menu lists different map providers (OSM, NASA) with available maps.
+Click on an entry and you would load the base map into your project.
+
+<div align="center">
+<img alt="qmsmenu" src="images/qms_menu.png" width="55%">
+</div>
+
+
 
 ### DEM Access via OpenTopography's API
 Users can get terrain data product by using OpenTopography's API. Users can build the REST API call and it will output the appropriate request to use in a curl command, or a http GET request. Here is the URL request that can be used via https for COP30 data over Jeddah:
