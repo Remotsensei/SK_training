@@ -6,9 +6,10 @@ s3_url_prefix = "https://esa-worldcover.s3.eu-central-1.amazonaws.com"
 
 input_shp = QgsProject.instance().mapLayersByName('esa_worldcover_2020_grid')[0]
 
-tempOutputFolder='F:\\SK_Qgis\\training\\Wed27\\tempOutput\\'
-outputFolder='F:\\SK_Qgis\\training\\Wed27\\outputs\\'
+tempOutputFolder='E:\\SK_Qgis\\training\\Wed27\\tempOutput\\'
+outputFolder='E:\\SK_Qgis\\training\\Wed27\\outputs\\'
 
+intersect_shp = QgsProject.instance().mapLayersByName('selected_area')[0]
 
 for feature1 in intersect_shp.getFeatures():
     intersect_shp.selectByIds([feature1.id()])
@@ -40,7 +41,7 @@ for feature1 in intersect_shp.getFeatures():
         my_vrt = gdal.BuildVRT(vrt_path, l,options=vrt_options)
         bounds=intersect_shp.boundingBoxOfSelected()
         processing.run("gdal:cliprasterbyextent", {'INPUT':vrt_path,'PROJWIN':'{x},{y},{z},{u} [EPSG:4326]'.format(x=bounds.xMinimum(),y=bounds.xMaximum(),z=bounds.yMinimum(),u=bounds.yMaximum()),'OVERCRS':False,'NODATA':None,'OPTIONS':'','DATA_TYPE':0,'EXTRA':'','OUTPUT':vrt_path2})
-        line='gdalwarp -s_srs EPSG:4326 -t_srs EPSG:32237 -r near -of GTiff {aa} {bb}'.format(aa=vrt_path2,bb=result)
+        line='gdalwarp -s_srs EPSG:4326 -t_srs EPSG:32237 -r near -of GTiff {aa} {bb}'.format(aa=vrt_path2,bb=vrt_path3)
         subprocess.run(line)
         line='gdal_translate -b 1 {aa} {bb}'.format(aa=vrt_path2,bb=result)
         subprocess.run(line)
