@@ -15,9 +15,15 @@ This section presents the recommended steps to create a project, provide the cor
 
 ### Useful QGIS Plugins
 The QuickMapServices plugin is a simple and easy to use plugin that adds base maps to your QGIS project.
-Install the QuickMapServices plugin.
-Go to plugins > manage plugins > All > search for QuickMapServices and install
 
+From the main menu’ select ‘Plugins’
+
+ <div align="center">
+<img alt="Fig01" src="images/Picture1.png" width="55%">
+</div>
+
+Then select’ ALL’
+And start searching for QuickMapServices
 
 <div align="center">
 <img alt="quickmap" src="images/quickmapservices.png" width="55%">
