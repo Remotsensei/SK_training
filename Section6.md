@@ -49,13 +49,14 @@ Below is an extract of the script that creates the new tmp.hdf from an input hdf
 <img alt="Fig21" src="images/Fig21.jpg" width="85%">
 </div>
 
-2. In addition to these files, the system needs 
-	- a *.csv file [*boundary2CREST.csv*] that links the names of the BC in hecras, to the names of the corresponding outlets from CREST
-	- a folder named 'input_flows' where all the CSVs for the CREST outlets are stored. For this example, we can upload the results from the radar analysis, found in *resources/inputFlows_WRF.zip*
-	- a folder named 'results' where the output maps will be saved
+2. In addition to these files, the PHASE 3 system needs 
+	- a *.Json file of all the outlets, and a json file of all the domains
+ 	- config.ini file, with the configuration of all the domains
+	- a folder named 'input_flows' where all the CSVs for the CREST outlets are stored [will be created if it does not exist]
+	- a folder named 'results' where the output maps will be saved  [will be created if it does not exist]
 	
 	
-> Note: the file boundary2CREST.csv can be created using any GIS software, and providing a spatial join between the outlets and the HECras BC. It can also be created manually, provided that the user knows the abovementioned information. Note that the file header **must** be consistent with the example above, for the script to run
+> Note: the jsons files can be created using any GIS software
 
 ### Folder organization in Linux
 
