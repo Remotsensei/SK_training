@@ -26,7 +26,7 @@ videos/hillshade1.mp4
 
 <ins> 2.	Define your area of interest </ins>
 
-In Qgis, we can ‘draw’ the area for which we want to remove the roads. At this stage, we can draw a simple ‘square’ area, around a single road. Optionally, one could create one for each road/bridge they want to remove
+In Qgis, we can ‘draw’ the area for which we want to remove the roads. At this stage, we can draw a simple area, around a single road. Optionally, one could create one for each road/bridge they want to remove
 
 a.	Add the road file
 b.	zoom to the road
@@ -44,34 +44,19 @@ c.  Create an empty layer  and save it in your working folder
 
 c.	Set the parameters for the file
 It is important to set a path where to save, select the type as polygon, and set the coordinates as EPSG:32237  [it must be the same coordinate system of your terrain!)
-
 Once the layer is added automatically, right click on it, and set it as editable
 
-
-  <div align="center">
+<div align="center">
 <img alt="Fig05" src="images/Picture5.png" width="55%">
 </div>
 
 
 d.	Draw a bounding box able to contain the whole extent of the road
 
-On the toolbar, activate the ‘polygon’ tool
-
-  <div align="center">
-<img alt="Fig06" src="images/poly1.png" width="55%">
-</div>
-
-Once you do this, you will have a ‘shape digitizing’ toolbar, with the option to add a rectangle
-There is a Shape Digitizing toolbar which has an option to add rectangle using different methods:
- 
-  <div align="center">
-<img alt="Fig07" src="images/Picture7.png" width="55%">
-</div>
-
-To show the toolbar, right-click the main menu and select Shape Digitizing toolbar
+On the toolbar, activate the ‘polygon’ tool. To show the toolbar, right-click the main menu and select Shape Digitizing toolbar
 Draw your polygon to encompass the visible road on the terrain
 
-  <div align="center">
+<div align="center">
 <img alt="Fig10" src="images/roads2.png" width="55%">
 </div>
 
