@@ -28,7 +28,7 @@ videos/hillshade1.mp4
 
 In Qgis, we can ‘draw’ the area for which we want to remove the roads. At this stage, we can draw a simple ‘square’ area, around a single road. Optionally, one could create one for each road/bridge they want to remove
 
-a.	Add the road file 
+a.	Add the road file
 b.	zoom to the road
 
 <div align="center">
