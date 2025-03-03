@@ -66,10 +66,10 @@ Save the editing by making the layer ‘uneditable’, and confirm the changes
 
 Let's create a temporary layer, having only the road. We will need this as a 'negative mask', to filter out the road from the terrain
 Check the below image to set correctly all parameters
-As input file, we will use the original terrain data (With the road). AS Mask layer, we will use the polygon previously created. 
-As Target extent, please consider to use the overall extent of the terrain, by selecting it from the drop down menu to the right.
-**REMOVE the checkmark from 'Match the extent of the clipped raster...'
-**CHECK 'Keep resolution of the input'
+/n As input file, we will use the original terrain data (With the road). AS Mask layer, we will use the polygon previously created. 
+/n As Target extent, please consider to use the overall extent of the terrain, by selecting it from the drop down menu to the right.
+/n **REMOVE the checkmark from 'Match the extent of the clipped raster...'
+/n  **CHECK 'Keep resolution of the input'
 
 <div align="center">
 <img alt="Fig10" src="images/clipRaster.png" width="55%">
