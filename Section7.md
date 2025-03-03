@@ -45,10 +45,6 @@ c.  Create an empty layer  and save it in your working folder
 c.	Set the parameters for the file
 It is important to set a path where to save, select the type as polygon, and set the coordinates as EPSG:32237  [it must be the same coordinate system of your terrain!)
 
-  <div align="center">
-<img alt="Fig04" src="images/Picture4.png" width="55%">
-</div>
-
 Once the layer is added automatically, right click on it, and set it as editable
 
 
