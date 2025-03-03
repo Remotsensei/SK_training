@@ -1,5 +1,5 @@
-## Hydraulic modeling in linux
-Keywords: `Hydraulics` `HEC-RAS` `2D` `Modeling` `Unsteady` `Hydraulic`  `Linux`
+## Remove Roads and Bridges
+Keywords: `Hydraulics` `terrain`
 
 <div align="center">
 <br><b>Giulia Sofia, PhD</b><br>
@@ -78,3 +78,28 @@ Draw your polygon to encompass the visible road on the terrain
 Save the editing by making the layer ‘uneditable’, and confirm the changes
 
 ------------------------------------
+
+Let's create a temporary layer, having only the road. We will need this as a 'negative mask', to filter out the road from the terrain
+Check the below image to set correctly all parameters
+
+<div align="center">
+<img alt="Fig10" src="images/clipRaster.png" width="55%">
+</div>
+
+We will now create a mask, where the entire area under the polygon will be 1, and 0 otherwise
+
+<div align="center">
+<img alt="Fig10" src="images/setmask.png" width="55%">
+</div>
+
+With the raster calculator, we will now set the road area as nodata
+
+<div align="center">
+<img alt="Fig10" src="images/rcalc.png" width="55%">
+</div>
+
+Finally, we will fill the dataset
+
+<div align="center">
+<img alt="Fig10" src="images/fill.png" width="55%">
+</div>
