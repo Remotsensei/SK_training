@@ -67,22 +67,34 @@ Save the editing by making the layer ‘uneditable’, and confirm the changes
 Let's create a temporary layer, having only the road. We will need this as a 'negative mask', to filter out the road from the terrain
 Check the below image to set correctly all parameters
 
-As input file, we will use the original terrain data (With the road). AS Mask layer, we will use the polygon previously created. 
-As Target extent, please consider to use the overall extent of the terrain, by selecting it from the drop down menu to the right.
-**REMOVE the checkmark from 'Match the extent of the clipped raster...'
-**CHECK 'Keep resolution of the input'
+As input file, we will use the original terrain data (With the road). AS Mask layer, we will use the polygon previously created.  
+As Target extent, please consider to use the overall extent of the terrain, by selecting it from the drop down menu to the right.  
+**REMOVE the checkmark from 'Match the extent of the clipped raster...'  
+**CHECK 'Keep resolution of the input'  
 
 <div align="center">
 <img alt="Fig10" src="images/clipRaster.png" width="55%">
 </div>
 
-We will now create a mask, where the entire area under the polygon will be 1, and 0 otherwise
+We will now create a mask, where the entire area under the polygon will be 0, and 1 otherwise  
+the equation should report  
+INPUTDEM != masklayer  
+where INPUTDEM is your original terrain, WITH the road  
+while masklayer is the layer created in the previous step  
+
+
 
 <div align="center">
 <img alt="Fig10" src="images/setmask.png" width="55%">
 </div>
 
 With the raster calculator, we will now set the road area as nodata
+the equation should report  
+INPUTDEM/Out  
+where INPUTDEM is your original terrain, WITH the road  
+while Out is the layer created in the previous step  
+by doing this operation, the area within the road polygon will become a nodata due to the division by 0  
+
 
 <div align="center">
 <img alt="Fig10" src="images/rcalc.png" width="55%">
