@@ -69,11 +69,6 @@ There is a Shape Digitizing toolbar which has an option to add rectangle using d
 </div>
 
 To show the toolbar, right-click the main menu and select Shape Digitizing toolbar
-	
- <div align="center">
-<img alt="Fig08" src="images/Picture8.png" width="55%">
-</div>
-
 Draw your polygon to encompass the visible road on the terrain
 
   <div align="center">
